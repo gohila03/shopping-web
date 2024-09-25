@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: rgb(243, 147, 113);
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  height: 40px;
+  width: 100%;
+}
+
+.navtool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navtool a {
+  padding: 20px;
+  color: black;
+}
+
+.navtool a:hover,
+.navtool a.active {
+  color: white;
+}
+
+.icon {
+  display: flex;
+}
+
+.icon a {
+  padding: 15px;
+  color: black;
+}
+
+.icon a:hover {
+  color: white;
+}
+
+.main h4 {
+  font-size: 25px;
+  color: black;
+  text-shadow: 2px 1px 1px;
+}
+
+.main h4 span {
+  color: white;
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: flex-start;
+  }
+
+  .navtool {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .navtool a {
+    padding: 10px 15px;
+  }
+
+  .icon {
+    justify-content: flex-start;
+  }
+
+  .icon a {
+    padding: 10px;
+  }
+
+  .main h4 {
+    font-size: 22px;
+  }
+}
+
+/* Media Query for Mobile Devices (600px and below) */
+@media (max-width: 600px) {
+  header {
+    height: 50px;
+  }
+
+  .nav {
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .navtool {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navtool a {
+    padding: 10px 5px;
+    width: 100%;
+    text-align: left; /* Ensure the links are aligned left */
+  }
+
+  .icon {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .icon a {
+    padding: 8px;
+  }
+
+  .main h4 {
+    font-size: 20px;
+  }
+}
+
+/* Media Query for Larger Screens (1024px and above) */
+@media (min-width: 1024px) {
+  .nav {
+    padding: 10px 80px;
+  }
+
+  .navtool a {
+    padding: 25px;
+  }
+
+  .icon a {
+    padding: 20px;
+  }
+
+  .main h4 {
+    font-size: 30px;
+  }
+}

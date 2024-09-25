@@ -1,0 +1,60 @@
+.scrolling {
+    overflow-y: auto;
+    max-height: 100vh;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .topic h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 2px;
+    margin: 50px 0;
+  }
+  
+  .box-2 {
+    background-color: rgb(240, 167, 141);
+    width: 90%;
+    margin: 10px auto;
+    height: 450px;
+    padding: 10px;
+  }
+  
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .flex > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 380px;
+  }
+  .boxflex h4 {
+    margin-top: 10px;
+  }
+  
+  /* Fixed class names here */
+  .women,
+  .men,
+  .kids { /* Corrected from .Women and .Men to .women and .men */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding: 10px;
+  }
+  
+  .women img,
+  .men img, /* Corrected from .Men to .men */
+  .kids img {
+    height: 110px;
+    width: 120px;
+  }
+  
+  .product img {
+    height: 250px;
+    width: 200px;
+  }
+  

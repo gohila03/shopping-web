@@ -1,0 +1,125 @@
+.pro {
+  text-align: center;
+}
+
+.pro h1 {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.pro h1 span {
+  color: rgb(230, 129, 129);
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensures products wrap in smaller viewports */
+}
+
+.product {
+  margin: 10px;
+  background-color: #fff; /* Added a background color for clarity */
+  border-radius: 10px; /* Optional: adds rounded corners to product */
+  overflow: hidden; /* Ensures image and content stay within the product box */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.product img {
+  height: 250px;
+  width: 200px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.product:hover {
+  transform: scale(1.05); /* Slightly scale up the product box on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to product box */
+}
+
+.product:hover img {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.desc {
+  padding: 10px;
+}
+
+.desc h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.desc-1 i {
+  color: rgb(243, 243, 8);
+}
+
+.desc-2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.desc-2 span {
+  color: #000; /* Default color for prices */
+}
+
+.desc-2 del {
+  color: gray;
+}
+
+/* Media Query for tablets and small desktops (768px and below) */
+@media (max-width: 768px) {
+  .products {
+    justify-content: space-between; /* Adjust spacing for smaller screens */
+  }
+
+  .product {
+    width: 45%; /* Reduce product width to fit 2 items per row */
+    margin: 10px auto; /* Center products */
+  }
+
+  .product img {
+    height: 220px;
+    width: 100%; /* Make the image width dynamic */
+  }
+}
+
+/* Media Query for mobile devices (600px and below) */
+@media (max-width: 600px) {
+  .products {
+    flex-direction: column; /* Stack products vertically */
+    align-items: center;
+  }
+
+  .product {
+    width: 90%; /* Full width for mobile, with some padding */
+  }
+
+  .product img {
+    height: auto; /* Allow the image height to adjust based on the width */
+    width: 100%;
+  }
+
+  .desc-2 {
+    flex-direction: column; /* Stack price and other details vertically */
+    align-items: flex-start;
+  }
+}
+
+/* Media Query for larger screens (1024px and above) */
+@media (min-width: 1024px) {
+  .products {
+    justify-content: space-evenly; /* More spacing for larger screens */
+  }
+
+  .product {
+    width: 22%; /* Adjust to fit 4 items per row */
+  }
+
+  .product img {
+    height: 300px; /* Increase the size of images */
+    width: 100%;
+  }
+}

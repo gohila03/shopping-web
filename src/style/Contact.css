@@ -1,0 +1,40 @@
+/* Contact Section CSS */
+.cont {
+    background-color: rgb(240, 167, 141); /* Background color for the section */
+    height: auto;
+    padding: 20px;
+   margin-top: 30px;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column; /* Ensures the form and text are stacked vertically */
+    align-items: center; /* Centers the form elements */
+    padding: 20px;
+  }
+  
+  .contact .text {
+    text-align: center; /* Center-aligns the heading and description */
+    margin-bottom: 20px;
+  }
+  
+  .contact h1 {
+    font-size: 28px;
+    color: black;
+  }
+  .contact h1 span {
+    color: white; /* Highlights the word "Fantasy" */
+  } 
+  form input {
+    padding: 15px;
+    border-radius: 20px;
+ 
+    border: 2px solid pink;
+
+  } 
+  form button {
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid pink;
+  }
+    

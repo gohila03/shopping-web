@@ -1,0 +1,100 @@
+Styling for the section containing the product list
+.pro h1 {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.pro h1 span {
+  color: rgb(230, 129, 129);
+}
+
+/* Styling for the products container */
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styling for individual product items */
+.product img {
+  height: 250px;
+  width: 200px;
+}
+
+/* Styling for product description */
+.desc h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+}
+
+/* Styling for product rating stars */
+.desc-1 i {
+  color: rgb(243, 243, 8);
+}
+
+/* Styling for the pricing section */
+.desc-2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.desc-2 del {
+  color: gray;
+}
+
+/* Responsive design for screens less than 768px */
+@media (max-width: 768px) {
+  .product img {
+    height: 200px;
+    width: 150px;
+    padding: 10px 85px;
+  }
+  .pro h1 {
+    font-size: 24px;
+  }
+  .desc h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .desc-1 {
+    padding-left: 140px;
+  }
+  .desc-2 {
+    font-size: 12px;
+    padding: 10px 90px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+}
+
+/* Responsive design for screens less than 476px */
+@media (max-width: 476px) {
+  .product img {
+    height: 250px;
+    width: 200px;
+    padding: 10px 110px;
+  }
+  .pro h1 {
+    font-size: 20px;
+  }
+  .desc h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .desc-1 {
+    padding-left: 150px;
+  }
+  .desc-2 {
+    font-size: 10px;
+    padding: 10px 150px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
